@@ -9,9 +9,10 @@ Example of Linda Proxy in Python
 
 '''
 
-import lindaproxy as lp
-
+import DALI.LindaProxy.lindaproxy as lp
+import time
 # Main
 
 L = lp.LindaProxy(host='127.0.0.1')
 L.send_message('agent1', 'go')
+L.start()
