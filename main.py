@@ -13,5 +13,5 @@ import lindaproxy as lp
 
 # Main
 
-L = lp.LindaProxy(host='10.0.40.173')
+L = lp.LindaProxy(host='127.0.0.1')
 L.send_message('agent1', 'go')
