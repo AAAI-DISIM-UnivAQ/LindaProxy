@@ -165,7 +165,7 @@ class LindaProxy(object):
 
     def createmessage(self, senderAg, destinationAg, typefunc, message):
         m = "message(%s:3010,%s,%s:3010,%s,italian,[],%s(%s,%s))" % \
-            (self._host, destinationAg, self._host, senderAg,
+            ('localhost', destinationAg, self._host, senderAg,
               typefunc, message, senderAg)
         return m
 
